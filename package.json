@@ -7,7 +7,7 @@
     "node": "^10.14"
   },
   "scripts": {
-    "test": "grunt coverage",
+    "test": "mocha server/tests",
     "start": "NODE_ENV=production node server/index.js",
     "dev": "DEBUG=server,server:* nodemon --watch server server/index.js"
   },
