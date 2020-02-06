@@ -1,0 +1,61 @@
+{
+  "name": "carpool",
+  "version": "1.0.0",
+  "description": "Carpool App",
+  "main": "server/index.js",
+  "engines": {
+    "node": "^10.14"
+  },
+  "scripts": {
+    "test": "grunt coverage",
+    "start": "NODE_ENV=production node server/index.js",
+    "dev": "DEBUG=server,server:* nodemon --watch server server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerayo-ltd/carpool.git"
+  },
+  "author": "Gerayo Ltd.",
+  "contributors": [
+    {
+      "name": "Eric Serge Uwimana",
+      "email": "euwimana@gerayo.com",
+      "url": "https://www.linkedin.com/in/ufashinkiko/"
+    },
+    {
+      "name": "Yves Niyonshuti",
+      "email": "yniyonshuti@gerayo.com",
+      "url": "https://www.linkedin.com/in/?/"
+    },
+    {
+      "name": "Audace Uhiriwe",
+      "email": "auhiriwe@gerayo.com",
+      "url": "https://www.linkedin.com/in/?/"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerayo-ltd/carpool/issues"
+  },
+  "homepage": "https://github.com/gerayo-ltd/carpool#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "grunt": "^1.0.4",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-mocha-nyc": "^1.0.3",
+    "grunt-mocha-test": "^0.13.3",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "nodemailer": "^6.3.0",
+    "passport": "^0.4.0",
+    "pg": "^7.11.0",
+    "sequelize": "^5.8.12"
+  }
+}
